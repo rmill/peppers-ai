@@ -1,0 +1,12 @@
+[Unit]
+Description=4K Video Receiving Service
+After=network.target
+
+[Service]
+ExecStart=/path/to/receive_stream.sh
+Restart=always
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target
